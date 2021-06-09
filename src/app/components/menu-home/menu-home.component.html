@@ -6,7 +6,7 @@
         <mat-card class="matCard" *ngFor="let menu of menuList">
             <mat-card-title-group>
                 <mat-card-title>{{menu.title}}</mat-card-title>
-                <mat-card-subtitle>{{menu.price}}</mat-card-subtitle>
+                <mat-card-subtitle>{{menu.price|currency:"INR":"symbol"}}</mat-card-subtitle>
             </mat-card-title-group>
             <mat-card-content>
                 <img class="matCardImg"  src="assets/images/{{menu.imageKey}}.jpg" mat-card-sm-image />
