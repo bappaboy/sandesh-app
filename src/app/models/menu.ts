@@ -3,4 +3,5 @@ export interface Menu {
   price: string;
   imageKey: string;
   variations: string;
+  veg: boolean;
 }

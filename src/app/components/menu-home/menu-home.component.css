@@ -8,6 +8,14 @@
     flex: 1;
 }
 
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
 .appImage {
     width: 100%;
     height: 100%;

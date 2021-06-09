@@ -5,7 +5,15 @@
     <div class="MenuHolder flex-container-cards">
         <mat-card class="matCard" *ngFor="let menu of menuList">
             <mat-card-title-group>
-                <mat-card-title>{{menu.title}}</mat-card-title>
+                <mat-card-title>
+                    {{menu.title}}
+                    <span *ngIf="menu.veg" class="material-icons-outlined green">
+                        circle
+                    </span>
+                    <span *ngIf="menu.veg" class="material-icons-outlined red">
+                        circle
+                    </span>
+                </mat-card-title>
                 <mat-card-subtitle>{{menu.price|currency:"INR":"symbol"}}</mat-card-subtitle>
             </mat-card-title-group>
             <mat-card-content>
