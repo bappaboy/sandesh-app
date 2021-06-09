@@ -1,0 +1,27 @@
+.menuHeader {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+}
+
+.subMenuHeader {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(22, 21, 21);
+    color: white;
+    text-align: center;
+    height: 20px;
+  }
+
+.phoneNumber {
+    background-color: rgb(22, 21, 21);
+    color: aliceblue;
+    padding: 2px 2px 2px 2px;
+    border-radius: 2px;
+}

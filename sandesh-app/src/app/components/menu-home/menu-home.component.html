@@ -1,0 +1,17 @@
+<div class="flex-container">
+    <div class="imageHolder">
+        <img class="appImage" src="assets/images/SANDESH-LOGO.jpg" />
+    </div>
+    <div class="MenuHolder flex-container-cards">
+        <mat-card class="matCard" *ngFor="let menu of menuList">
+            <mat-card-title-group>
+                <mat-card-title>{{menu.title}}</mat-card-title>
+                <mat-card-subtitle>{{menu.price}}</mat-card-subtitle>
+            </mat-card-title-group>
+            <mat-card-content>
+                <img class="matCardImg"  src="assets/images/{{menu.imageKey}}.jpg" mat-card-sm-image />
+                <div class="variations">{{menu.variations}} </div>
+            </mat-card-content>
+        </mat-card>
+    </div>  
+</div>
