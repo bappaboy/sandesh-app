@@ -9,11 +9,18 @@
 }
 
 .red {
-  background-color: red;
+  color: red;
+  font-size: 8px;
 }
 
 .green {
-  background-color: green;
+  color: green;
+  font-size: 8px;
+}
+
+.money {
+  color: firebrick;
+  font-weight: bolder;
 }
 
 .appImage {
@@ -27,6 +34,8 @@
     flex-direction: row;
     margin-left: 10px;
     margin-right: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
   }
 
   .flex-container-cards {
@@ -36,6 +45,10 @@
 
 .matCard {
     flex: 1;
+}
+
+.variations {
+  font-style: italic;
 }
 
 .matCardImg{

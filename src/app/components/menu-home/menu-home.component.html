@@ -6,19 +6,26 @@
         <mat-card class="matCard" *ngFor="let menu of menuList">
             <mat-card-title-group>
                 <mat-card-title>
+                    
+                    <mat-icon [inline]="true" *ngIf="menu.veg" color="green" class="green">
+                        circle
+                    </mat-icon>
+                    <mat-icon [inline]="true" *ngIf="!menu.veg" color="red" class="red">
+                        circle
+                    </mat-icon>
                     {{menu.title}}
-                    <mat-icon *ngIf="menu.veg" class="green">
-                        circle
-                    </mat-icon>
-                    <mat-icon *ngIf="!menu.veg" class="red">
-                        circle
-                    </mat-icon>
                 </mat-card-title>
-                <mat-card-subtitle>{{menu.price|currency:"INR":"symbol"}}</mat-card-subtitle>
             </mat-card-title-group>
             <mat-card-content>
+                <table>
+                    <tr>
+                        <td class="variations">{{menu.variations}}</td>
+                        <td>@</td>
+                        <td class="money">{{menu.price|currency:"INR":"symbol"}}</td>
+                    </tr>
+                </table>
                 <img class="matCardImg"  src="assets/images/{{menu.imageKey}}.jpg" mat-card-sm-image />
-                <div class="variations">{{menu.variations}} </div>
+                
             </mat-card-content>
         </mat-card>
     </div>  
