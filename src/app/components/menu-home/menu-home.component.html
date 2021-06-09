@@ -7,10 +7,10 @@
             <mat-card-title-group>
                 <mat-card-title>
                     {{menu.title}}
-                    <span *ngIf="menu.veg" class="material-icons-outlined green">
+                    <mat-icon *ngIf="menu.veg" class="green">
                         circle
                     </span>
-                    <span *ngIf="menu.veg" class="material-icons-outlined red">
+                    <mat-icon *ngIf="!menu.veg" class="red">
                         circle
                     </span>
                 </mat-card-title>
